@@ -1,16 +1,8 @@
 <h1>RodrigoXdn/Laravel Pkg</h1>
 
 <h2>Installing pkg.</h2>
-<p></p>
+<p><strong>composer require rodrigoxdn/laravel</strong></p>
 <p>
-	Add service provider in the file config/app.php
-	<br>
-	/*
-     * Package Service Providers...
-     */
-    <br>
-        RodrigoXdn\Laravel\XdnServiceProvider::class,
-    <br>
 	Enter the pkg installation command into terminal/cmd/bash.
 </p>
 
