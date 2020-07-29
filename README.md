@@ -1,4 +1,4 @@
-##RodrigoXdn/Laravel Pkg
+<h1>RodrigoXdn/Laravel Pkg</h1>
 
 <h2>Installing pkg.</h2>
 <p></p>
