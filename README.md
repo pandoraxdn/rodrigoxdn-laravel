@@ -1,4 +1,4 @@
-#RodrigoXdn/Laravel Pkg
+##RodrigoXdn/Laravel Pkg
 
 <h2>Installing pkg.</h2>
 <p></p>
@@ -8,6 +8,7 @@
 	/*
      * Package Service Providers...
      */
+    <br>
         RodrigoXdn\Laravel\XdnServiceProvider::class,
     <br>
 	Enter the pkg installation command into terminal/cmd/bash.
@@ -15,12 +16,12 @@
 
 <h2>Comands</h2>
 <p>
-	php artisan pkg:install
+	<strong>php artisan pkg:install</strong>
 	<br>
 	Install configuration of pkg.
 </p>
 <p>
-	php artisan pkg:route
+	<strong>php artisan pkg:route</strong>
 	<br>
 	Writing routes of pkg in your project.
 	<br>
@@ -29,21 +30,21 @@
 	It is recommended that you back up routes if they exist.
 </p>
 <p>
-	php artisan pkg:example
+	<strong>php artisan pkg:example</strong>
 	<br>
 	Displays sample files from the use of pkg.
 	<br>
 	The files have been copied to /resources/example/
 </p>
 <p>
-	php artisan pkg:controller {name : The controller name}
+	<strong>php artisan pkg:controller {name : The controller name}</strong>
 	<br>
 	Controller based on pkg configuration.
 	<br>
 	Note the controller only receives the name parameter.
 </p>
 <p>
-	php artisan pkg:controller-ajax {name : The controller name}
+	<strong>php artisan pkg:controller-ajax {name : The controller name}</strong>
 	<br>
 	Controller based on ajax pkg configuration.
 	<br>
