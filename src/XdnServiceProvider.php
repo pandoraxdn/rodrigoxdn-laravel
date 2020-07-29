@@ -26,11 +26,6 @@ class XdnServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{
-		// Router $router in th boot, por si acaso.
-		//$kernel = $this->app->make('Illuminate\Contracts\Http\Kernel');
-		//$kernel->pushMiddleware('RodrigoXdn\Laravel\Http\Middleware\Hash');
-		//$this->app['router']->middleware('hash','RodrigoXdn\Laravel\Http\Middleware\Hash');
-		//$router->middleware('hash', 'RodrigoXdn\Laravel\Http\Middleware\Hash');
 		$this->app['router']->aliasMiddleware('hash' , Hash::class);
 
 		if ($this->app->runningInConsole()) {

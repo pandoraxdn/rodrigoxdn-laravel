@@ -1,6 +1,6 @@
 <h1>RodrigoXdn/Laravel Pkg</h1>
 
-<h2>Installing pkg.</h2>
+<h2>Installing pkg</h2>
 <p><strong>composer require rodrigoxdn/laravel</strong></p>
 <p>
 	Enter the pkg installation command into terminal/cmd/bash.
@@ -19,7 +19,7 @@
 	<br>
 	Note the current routes will be overwritten from the /routes/web.php file.
 	<br>
-	It is recommended that you back up routes if they exist.
+	It is recommended that you backup routes if they exist.
 </p>
 <p>
 	<strong>php artisan pkg:example</strong>
