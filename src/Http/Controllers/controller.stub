@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Redirect;
 
 use RodrigoXdn\Laravel\Fecades\FunctionPkg;
 
-class MyName extends Controller
+class MyNameController extends Controller
 {
 
     public function index($date)
