@@ -14,7 +14,7 @@ class MakeController extends Command
 {
 	protected $signature = 'pkg:controller {name : The controller name}';
 
-	protected $description = 'Create a customized controller ajax in Laravel.';
+	protected $description = 'Create a customized controller in Laravel.';
 
 	private $files;
 
