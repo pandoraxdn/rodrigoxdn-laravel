@@ -29,7 +29,7 @@ class FunctionPkg
 
     public function encrypt(string $value)
     {
-    	$string = CCrypt::encryptString($value);
+    	$string = Crypt::encryptString($value);
 
     	return $string;
     }
