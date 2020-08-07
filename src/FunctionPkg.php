@@ -14,7 +14,7 @@ class FunctionPkg
 
     public function current_day()
     {
-    	$string = Crypt::encrypt(date_format(new DateTime('now'),'d/m/Y H:i:s'));
+    	$string = Crypt::encryptString(date_format(new DateTime('now'),'d/m/Y H:i:s'));
 
     	return $string;
 
@@ -29,7 +29,7 @@ class FunctionPkg
 
     public function encrypt(string $value)
     {
-    	$string = Crypt::encrypt($value);
+    	$string = CCrypt::encryptString($value);
 
     	return $string;
     }
@@ -38,7 +38,7 @@ class FunctionPkg
     {
     	try {
 
-    		$string = Crypt::decrypt($value);
+    		$string = Crypt::decryptString($value);
 
     		return $string;
     		
@@ -53,7 +53,7 @@ class FunctionPkg
 
     public function request_date(string $time)
     {
-        $string = Crypt::encrypt(date_format(new DateTime($time),'d/m/Y H:i:s'));
+        $string = Crypt::encryptString(date_format(new DateTime($time),'d/m/Y H:i:s'));
 
         return $string;
     }
