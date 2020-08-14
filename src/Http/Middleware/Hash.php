@@ -21,23 +21,30 @@ class Hash
 
     		if (Request::is('validate/*')) 
             {
-                $current_day = FunctionPkg::format_date();
-
                 $request_day = FunctionPkg::decrypt($request->date);
 
-                $current_format = FunctionPkg::create_format($current_day);
+                if ($request_day != null) {
 
-                $request_format = FunctionPkg::create_format($request_day);
+                    $current_day = FunctionPkg::format_date();
 
-                $interval = $current_format->diff($request_format);
+                    $current_format = FunctionPkg::create_format($current_day);
 
-                $validate_hours = intval($interval->format('%h'));
+                    $request_format = FunctionPkg::create_format($request_day);
 
-                $validate_days = intval($interval->format('%a'));
+                    $interval = $current_format->diff($request_format);
 
-                if ($validate_days == 0 && $validate_hours <= 10 && $request_day != null) {
+                    $validate_hours = intval($interval->format('%h'));
 
-                    return Redirect::to(FunctionPkg::decrypt($request->param)."/".FunctionPkg::current_day());
+                    $validate_days = intval($interval->format('%a'));
+
+                    if($validate_days == 0 && $validate_hours <= 10)
+                    {
+                        return Redirect::to(FunctionPkg::decrypt($request->param)."/".FunctionPkg::current_day());
+
+                    }else
+                    {
+                        return Redirect::to("/");
+                    }
             
                 }else{
 
@@ -47,24 +54,30 @@ class Hash
 
             }else if(Request::is('getter/*'))
             {
-
-                $current_day = FunctionPkg::format_date();
-
                 $request_day = FunctionPkg::decrypt($request->date);
 
-                $current_format = FunctionPkg::create_format($current_day);
+                if ($request_day != null) {
 
-                $request_format = FunctionPkg::create_format($request_day);
+                    $current_day = FunctionPkg::format_date();
 
-                $interval = $current_format->diff($request_format);
+                    $current_format = FunctionPkg::create_format($current_day);
 
-                $validate_hours = intval($interval->format('%h'));
+                    $request_format = FunctionPkg::create_format($request_day);
 
-                $validate_days = intval($interval->format('%a'));
+                    $interval = $current_format->diff($request_format);
 
-                if ($validate_days == 0 && $validate_hours <= 10 && $request_day != null) {
+                    $validate_hours = intval($interval->format('%h'));
 
-                    return $next($request);
+                    $validate_days = intval($interval->format('%a'));
+
+                    if($validate_days == 0 && $validate_hours <= 10)
+                    {
+                        return $next($request);
+
+                    }else
+                    {
+                        return Redirect::to("/");
+                    }
             
                 }else{
 
@@ -79,23 +92,30 @@ class Hash
             if (Request::is('setter/*')) 
             {
 
-                $current_day = FunctionPkg::format_date();
-
                 $request_day = FunctionPkg::decrypt($request->date);
 
-                $current_format = FunctionPkg::create_format($current_day);
+                if ($request_day != null) {
 
-                $request_format = FunctionPkg::create_format($request_day);
+                    $current_day = FunctionPkg::format_date();
 
-                $interval = $current_format->diff($request_format);
+                    $current_format = FunctionPkg::create_format($current_day);
 
-                $validate_hours = intval($interval->format('%h'));
+                    $request_format = FunctionPkg::create_format($request_day);
 
-                $validate_days = intval($interval->format('%a'));
+                    $interval = $current_format->diff($request_format);
 
-                if ($validate_days == 0 && $validate_hours <= 10 && $request_day != null) {
+                    $validate_hours = intval($interval->format('%h'));
 
-                    return $next($request);
+                    $validate_days = intval($interval->format('%a'));
+
+                    if($validate_days == 0 && $validate_hours <= 10)
+                    {
+                        return $next($request);
+
+                    }else
+                    {
+                        return Redirect::to("/");
+                    }
             
                 }else{
 
@@ -110,23 +130,30 @@ class Hash
             if (Request::is('setter/*')) 
             {
 
-                $current_day = FunctionPkg::format_date();
-
                 $request_day = FunctionPkg::decrypt($request->date);
 
-                $current_format = FunctionPkg::create_format($current_day);
+                if ($request_day != null) {
 
-                $request_format = FunctionPkg::create_format($request_day);
+                    $current_day = FunctionPkg::format_date();
 
-                $interval = $current_format->diff($request_format);
+                    $current_format = FunctionPkg::create_format($current_day);
 
-                $validate_hours = intval($interval->format('%h'));
+                    $request_format = FunctionPkg::create_format($request_day);
 
-                $validate_days = intval($interval->format('%a'));
+                    $interval = $current_format->diff($request_format);
 
-                if ($validate_days == 0 && $validate_hours <= 10 && $request_day != null) {
+                    $validate_hours = intval($interval->format('%h'));
 
-                    return $next($request);
+                    $validate_days = intval($interval->format('%a'));
+
+                    if($validate_days == 0 && $validate_hours <= 10)
+                    {
+                        return $next($request);
+
+                    }else
+                    {
+                        return Redirect::to("/");
+                    }
             
                 }else{
 
@@ -140,24 +167,31 @@ class Hash
 
             if (Request::is('setter/*')) 
             {
-
-                $current_day = FunctionPkg::format_date();
-
+                
                 $request_day = FunctionPkg::decrypt($request->date);
 
-                $current_format = FunctionPkg::create_format($current_day);
+                if ($request_day != null) {
 
-                $request_format = FunctionPkg::create_format($request_day);
+                    $current_day = FunctionPkg::format_date();
 
-                $interval = $current_format->diff($request_format);
+                    $current_format = FunctionPkg::create_format($current_day);
 
-                $validate_hours = intval($interval->format('%h'));
+                    $request_format = FunctionPkg::create_format($request_day);
 
-                $validate_days = intval($interval->format('%a'));
+                    $interval = $current_format->diff($request_format);
 
-                if ($validate_days == 0 && $validate_hours <= 10 && $request_day != null) {
+                    $validate_hours = intval($interval->format('%h'));
 
-                    return $next($request);
+                    $validate_days = intval($interval->format('%a'));
+
+                    if($validate_days == 0 && $validate_hours <= 10)
+                    {
+                        return $next($request);
+
+                    }else
+                    {
+                        return Redirect::to("/");
+                    }
             
                 }else{
 
